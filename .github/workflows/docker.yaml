@@ -56,7 +56,7 @@ jobs:
           context: .
           github-token: ${{ secrets.GITHUB_TOKEN }}
           push: true
-          tags: ghcr.io/${{ env.REPO }}:latest
+          tags: ghcr.io/fdelucchijr/tooljet:latest
           file: docker/production.Dockerfile
           platforms: linux/amd64,linux/arm64
           cache-from: type=local,src=/tmp/.buildx-cache
