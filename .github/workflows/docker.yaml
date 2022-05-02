@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Checking out the repository
         uses: actions/checkout@v2
+        with:
+          repository: 'https://github.com/ToolJet/ToolJet.git'
+          ref: 'develop'
+          path: '.'         
 
       - name: Set up Docker Context for Buildx
         id: buildx-context
