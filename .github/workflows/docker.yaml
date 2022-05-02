@@ -13,7 +13,7 @@ jobs:
       - name: Checking out the repository
         uses: actions/checkout@v2
         with:
-          repository: 'https://github.com/ToolJet/ToolJet.git'
+          repository: 'ToolJet/ToolJet'
           ref: 'develop'
           path: '.'         
 
